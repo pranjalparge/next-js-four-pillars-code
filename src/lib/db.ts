@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-const dbUri = process.env.mongoURI
-if(!dbUri){
-    throw new Error("mongodb uri is not present in env")
-}
+// const dbUri = process.env.mongoURI
+// if(!dbUri){
+//     throw new Error("mongodb uri is not present in env")
+// }
 
-const db : string = dbUri
+const db : string = "mongodb+srv://4pii:kSUVg4bKF6wx8wun@cluster0.mckibmd.mongodb.net/Website_Node_App?retryWrites=true&w=majority"
 // async function connect() : Promise<void>{
 //     const connectionState : number = mongoose.connection.readyState
 //     if(connectionState == 1){
