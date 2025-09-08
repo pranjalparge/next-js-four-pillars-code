@@ -1,6 +1,8 @@
 import { NextApiResponse } from "next";
 import jwt from "jsonwebtoken";
-import { getMod } from "@/lib/db"; // pratim adnust path :TODO
+// import { getMod } from "@/lib/db"; // pratim adnust path :TODO
+
+import {getMod} from "src/lib/db";
 
 export const verify = (req: any, res: NextApiResponse, next: Function) => {
   const token = req.headers.authorization;
