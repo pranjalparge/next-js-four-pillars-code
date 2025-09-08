@@ -32,6 +32,7 @@ const db : string = "mongodb+srv://4pii:kSUVg4bKF6wx8wun@cluster0.mckibmd.mongod
 
 let cached = (global as any).mongoose;
 
+
 if (!cached) {
   cached = (global as any).mongoose = { conn: null, promise: null };
 }
