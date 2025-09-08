@@ -6,7 +6,7 @@ if (!(global as any).mongoose) {
   (global as any).mongoose = { conn: null, promise: null };
 }
 
-let cached = (global as any).mongoose;
+const cached = (global as any).mongoose;
 
 async function connect(): Promise<typeof mongoose> {
   try {
@@ -31,10 +31,5 @@ async function connect(): Promise<typeof mongoose> {
   }
 }
 
-export const getMod = async (): Promise<number> => {
-  await connect();
-  // Example logic: return 0 for writable, 1 for readonly
-  return 0;
-};
 
 export default connect;

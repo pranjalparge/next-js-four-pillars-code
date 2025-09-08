@@ -1,4 +1,6 @@
-import crypto, { CipherKey } from "crypto";
+import type { CipherKey } from "crypto";
+
+import crypto from "crypto";
 
 export function encrypt(text: string, secretKey: string): string {
   const key = crypto.createHash("sha256").update(secretKey).digest() as CipherKey;

@@ -18,7 +18,7 @@ export const sendRandomSMS = async (
   mobile: string,
   countryCodeReceived?: string
 ): Promise<string> => {
-  const countryCode = countryCodeReceived ? countryCodeReceived : "91";
+  const countryCode = countryCodeReceived || "91";
 
   const postArray: SmsPayload = {
     sender: "TESTIN",

@@ -1,5 +1,6 @@
-import mongoose, { models } from "mongoose";
 import type { Model, Document, Schema as MongooseSchema } from "mongoose";
+
+import mongoose, { models } from "mongoose";
 
 // ---------------- SCHEMAS ----------------
 
@@ -246,9 +247,9 @@ const ongoing: Model<ongoingObject> = models.ongoing as mongoose.Model<ongoingOb
 // ---------------- EXPORTS ----------------
 
 export {
+  ongoing,
   extraImage,
-  fifthExtradataModel,
   fifthModel,
   homePageModel,
-  ongoing,
+  fifthExtradataModel,
 };

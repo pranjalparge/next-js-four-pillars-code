@@ -21,11 +21,3 @@ export async function GET (req:Request) : Promise<Response>{
     })
     }
 }
-
-export async function PATCH(req:Request){
-    try {
-        
-    } catch (error) {
-        console.log(error)
-    }
-}

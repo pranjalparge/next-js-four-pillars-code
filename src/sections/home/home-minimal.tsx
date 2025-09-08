@@ -1,13 +1,13 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import { Card, Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import { Button, Card } from '@mui/material';
 
 // ✅ Background & Fallback image from public folder
 const backgroundImage = '/assets/background/BG4SVG.svg';

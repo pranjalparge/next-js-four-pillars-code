@@ -1,20 +1,21 @@
 'use client';
 
+import Link from 'next/link';
+import Image from 'next/image';
+import party from 'public/assets/images/home/Party.png';
+
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Image from 'next/image';
-import Link from 'next/link';
 
 // ✅ Images should be in /public folder
 import Bg from '../../../public/assets/images/home/Circle.png';
-import image1 from '../../../public/assets/images/home/banner 50.svg';
 import edugen from '../../../public/assets/images/home/edugen.png';
-import iblive from '../../../public/assets/images/home/ibelive.png';
 import tumcha from '../../../public/assets/images/home/tumcha.png';
-import party from 'public/assets/images/home/Party.png';
+import iblive from '../../../public/assets/images/home/ibelive.png';
+import image1 from '../../../public/assets/images/home/banner 50.svg';
 
 // ✅ Data constants
 const mainContent = [
