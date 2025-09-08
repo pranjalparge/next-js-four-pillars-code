@@ -1,5 +1,5 @@
-import {homePageModel,fifthModel,fifthExtradataModel,extraImage,ongoing} from "../lib/modals/4pii_NewHompageContent"
-const basepath = process.env.BASE_PATH;
+import {homePageModel} from "../lib/modals/4pii_NewHompageContent"
+// const basepath = process.env.BASE_PATH;
 // const basepath = "https://pw73zddd-4072.inc1.devtunnels.ms/api"
 
 

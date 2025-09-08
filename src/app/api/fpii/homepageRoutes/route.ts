@@ -1,5 +1,6 @@
-import {handleGetData} from "src/controllers/4pii_newHomepageHandler"
+
 import connect from "src/lib/db";
+import {handleGetData} from "src/controllers/4pii_newHomepageHandler"
 
 
 export async function GET (req:Request) : Promise<Response>{
