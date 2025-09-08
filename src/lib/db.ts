@@ -60,4 +60,11 @@ async function connect(): Promise<typeof mongoose> {
   }
 }
 
+
+export const getMod = async (): Promise<number> => {
+  await connect();
+  // Example logic: return 0 for writable, 1 for readonly
+  return 0;
+};
+
 export default connect;
