@@ -236,6 +236,14 @@ const extraImagePdfSchema: MongooseSchema = new mongoose.Schema({
   image: { type: String, required: true },
 });
 
+interface DemoImage extends Document{
+  image : string
+}
+
+const DemoImageShema : MongooseSchema<DemoImage> = new mongoose.Schema({
+  image : String
+})
+
 // ---------------- MODELS ----------------
 
 const homePageModel = models["4piiHomePageData"] || mongoose.model("4piiHomePageData", homePageSchema);
@@ -243,7 +251,7 @@ const fifthModel = models.fifthobj || mongoose.model("fifthobj", fiftthObjectSch
 const fifthExtradataModel = models.fifthExtraData || mongoose.model("fifthExtraData", fifthExtraDataSchema);
 const extraImage = models.extraImage || mongoose.model("extraImage", extraImagePdfSchema);
 const ongoing: Model<ongoingObject> = models.ongoing as mongoose.Model<ongoingObject> || mongoose.model<ongoingObject>("ongoing", ongoingSchema);
-
+const DemoImageModel : Model<DemoImage> = models.DemoImage as mongoose.Model<DemoImage> || mongoose.model<DemoImage>("DemoImage",DemoImageShema)
 // ---------------- EXPORTS ----------------
 
 export {
@@ -251,5 +259,6 @@ export {
   extraImage,
   fifthModel,
   homePageModel,
+  DemoImageModel,
   fifthExtradataModel,
 };
